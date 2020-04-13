@@ -1,4 +1,4 @@
-nltk==3.4
+nltk==3.4.5
 dash==1.9.0
 requests==2.22.0
 tf_nightly_2.0_preview==2.0.0.dev20191002
