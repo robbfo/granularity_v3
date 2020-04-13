@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}Upload{% endblock %}
+
+{% block content %}
+	<div class="upload">
+		<p>To begin the analysis, please upload a series of PDFs describing the work your staff performs.</p>
+			<br>
+			<form method="post" enctype="multipart/form-data">
+				<label for="file">Select file(s) to upload:</label>
+				<input type="file" name="filetoupload" id="filetoupload" multiple required>
+				<br>
+				<input type="submit" value="Upload">
+			</form>
+			<br>
+			{% if g.table %}
+				{% for table in tables %}
+					{{ table|safe }}
+				{% endfor %}
+			{% endif %}
+	</div>
+{% endblock %}

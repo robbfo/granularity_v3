@@ -1,0 +1,160 @@
+html {
+	height:100%;
+	scroll-behavior: smooth;
+}
+
+body {
+	background:rgba(175,175,175,0.10);
+	font-family: "Acumin Pro Medium";
+	height:100%;
+}
+
+.loading {
+	display:block;
+	margin:auto;
+	height:200px;
+	background-color: rgba(175,175,175,0.10);
+}
+
+.header h1 {
+	font-size:22px;
+	display:inline-block;
+	margin-left:auto;
+	margin-right:auto;
+	position:relative;
+	width:40%;
+	margin-left:-150px;
+}
+
+.header {
+	display:block;
+	margin:auto;
+	height:150px;
+	line-height: 150px;
+	text-align:center;
+}
+
+.header img {
+	display:inline-block;
+	margin-left:auto;
+	margin-right:auto;
+	position:relative;
+	top:30%;
+}
+
+.register {
+	background-image:url("{{ url_for('static',filename='web_header_v3.jpg') }}");
+	background-color:rgba(175,175,175,0.10);
+	display:block;
+	height:100%;
+	margin:0;
+	overflow: auto;
+	text-align:center;
+}
+
+.userbar {
+	border-top: 2px thin rgba(255,255,255,0.5);
+	border-bottom: 5px thin rgba(255,255,255,0.7);
+	display:inline-flex;
+	float:right;
+	margin: 10px 50px 5px 0;
+}
+
+.grey {
+	background-color:rgba(175,175,175,0.10);
+	height:75px;
+	display:block;
+	margin:0;
+	overflow: all;
+}
+
+.logobar {
+	display:inline-flex;
+	margin: 10px 50px 5px 0;
+}
+
+.logobar h1 {
+	font-size:18px;
+	margin-left:-20px;
+}
+
+.logobar img {
+	margin-top:-3px;
+}
+
+input.danger {
+	color: #cc2f2e;
+}
+
+input {
+	padding:5px;
+	border: none;
+	margin:10px;
+}
+
+form {
+	background-color:rgba(175,175,175,0.30);
+	width:40%;
+	margin: auto;
+	border-radius:20px;
+}
+
+input[type=submit] {
+	background-color:rgba(255,255,255);
+}
+
+input[type=submit]:hover {
+	cursor:pointer;
+	background-color:rgba(0,0,0,0.5);
+	color:rgba(255,255,255);
+}
+
+a:hover {
+	color:(173,150,64);
+}
+
+.upload {
+	padding-top:50px;
+	display:block;
+	height:100%;
+	margin:0;
+	overflow: auto;
+	text-align:center;
+}
+
+.flash {
+	color:rgba(255,0,0,1);
+	font-size:14px;
+}
+
+.upload table {
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+	text-align:center;
+}
+
+.col {
+	display:block;
+}
+
+.container {
+	display:flex;
+}
+
+.summary {
+	display:block;
+	vertical-align: center;
+	text-align:center;
+}
+
+.summary h2 {
+	color:rgba(44, 130, 201, 1);
+	display:inline-block;
+	text-align:center;
+}
+
+.summary p {
+	display:inline-block;
+	text-align:center;
+}

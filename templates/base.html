@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+	<title>{% block title %}{% endblock %} - Granularity </title>
+	<link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}" type="text/css">
+	<meta charset="utf-8">
+    {% block head %}
+    {% endblock %}
+</head>
+
+<body>
+	{% if g.user %}
+		<div class="grey">
+		<div class="logobar">
+			<img src="{{ url_for('static',filename='hexagon black.png')}}" width="198" height="50.5" alt="Granularity logo"><h1> | Prototype Development v1</h1>
+		</div>
+		<div class="userbar">
+			<p><b>{{ g.user['username'] }}</b> | <a href="{{ url_for('auth.logout') }}">Log out</a></p>
+		</div>
+	</div>
+	{% else %}
+		<div class="loading">
+			<div class = "header">
+			<img src="{{ url_for('static',filename='hexagon black.png')}}" width="396" height="101" alt="Granularity logo"><h1> | Prototype Development v1</h1>
+			</div>
+		</div>
+				{% block registration %}{% endblock %}
+	{% endif %}
+	<div class="welcome">
+		{% block content %}
+		{% endblock %}
+	</div>
+</body>
+</html>

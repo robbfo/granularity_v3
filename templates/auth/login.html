@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}Log In{% endblock %}
+
+{% block registration %}
+	<div class="register">
+		<p>Welcome to <b>Granularity's AI Powered Web Application.</b> Please sign in below.</p>
+				<br>
+				<form method="post">
+					<label for="username">Username</label>
+					<input name="username" id="username" required>
+					<br>
+					<label for="password">Password</label>
+					<input name="password" type="password" id="password" required>
+					<br>
+					<input type="submit" value="Log In">
+				</form>
+				{% for message in get_flashed_messages() %}
+					<div class="flash"><p>{{ message }}</p></div>
+				{% endfor %}
+				<br>
+				<small>Administrators can <a href="{{ url_for('auth.register') }}">Register</a></small>
+	</div>	
+{% endblock %}
+
