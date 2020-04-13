@@ -4,7 +4,7 @@ requests==2.22.0
 tf_nightly_2.0_preview==2.0.0.dev20191002
 Click==7.0
 numpy==1.16.2
-Werkzeug==0.14.1
+Werkzeug==0.15.3
 dash_html_components==1.0.2
 pdfminer.six==20200124
 dash_core_components==1.8.0
